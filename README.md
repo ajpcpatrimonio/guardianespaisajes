@@ -8,7 +8,7 @@ Los grupos de estudiantes durante el proceso extrajeron información sobre los 1
 
 La obra puede ser consultada en este enlace: https://ajpcpatrimonio.github.io/guardianespaisajes/assets/html/index.html
 
-(Imagen 1)
+!(https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/common/indexfoto.JPG))
 
 (Imagen 2)
 
