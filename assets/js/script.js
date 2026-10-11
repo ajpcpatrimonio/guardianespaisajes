@@ -57,5 +57,5 @@ setInterval(changeBackground, 3000);
 
 // Botón para ir a la siguiente pantalla
 document.querySelector("#next-screen").addEventListener("click", () => {
-  window.location.href = "siguiente-pantalla.html";
+  window.location.href = "mapa.html";
 });
