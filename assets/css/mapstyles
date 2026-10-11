@@ -1,0 +1,96 @@
+:root {
+  --green: #245744;
+  --green-dark: #173e2e;
+  --cream: #1D2A3A;
+  --ink: #20332b;
+  --muted: #58685d;
+  --line: #d6ded3;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: #f4f6f8; background: var(--cream); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.55; }
+button { font: inherit; }
+button:focus-visible, [tabindex]:focus-visible { outline: 3px solid #125ec5; outline-offset: 3px; }
+[hidden] { display: none !important; }
+.site-header { color: white; background: #1D2A3A; padding: 28px 22px; }
+.header-inner, .page { width: min(1120px, calc(100% - 32px)); margin-inline: auto; }
+.site-header h1 { margin: 5px 0 10px; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; }
+.site-header p { max-width: 650px; margin: 0; color: #edf3ed; }
+.page { padding-block: 30px 50px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.section-heading h2 { margin: 0; font-size: 1.5rem; }
+.section-heading p { margin: 4px 0 0; color: #d3dbe5; }
+.point-count { padding: 7px 13px; border: 1px solid #39485b; border-radius: 999px; color: #f4f6f8; background: #26364a; font-weight: 700; }
+.map-frame { padding: clamp(6px, 2vw, 18px); border: 1px solid #39485b; border-radius: 18px; background: #1D2A3A; box-shadow: 0 8px 28px #213b2b12; }
+.map-canvas { position: relative; width: 100%; max-width: 1100px; margin-inline: auto; overflow: hidden; aspect-ratio: 900 / 620; border-radius: 10px; background: #1D2A3A; }
+.map-art { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.map-labels { fill: #435844; font-size: 14px; font-weight: 750; paint-order: stroke; stroke: #f6f3e9; stroke-width: 3px; stroke-linejoin: round; }
+.map-points { position: absolute; inset: 0; }
+.map-pin { position: absolute; display: grid; place-items: center; width: clamp(29px, 4vw, 40px); aspect-ratio: 1; transform: translate(-50%, -50%); padding: 0; border: 3px solid white; border-radius: 50%; color: white; background: #1D2A3A; box-shadow: 0 2px 8px #12251f55; font-weight: 800; cursor: pointer; }
+.map-pin:hover { background: #476a91; transform: translate(-50%, -50%) scale(1.08); }
+.map-caption { margin: 10px 3px 0; color: #d3dbe5; font-size: .86rem; }
+.modal-backdrop { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgb(13 29 21 / 76%); }
+.modal { display: flex; flex-direction: column; width: min(800px, 100%); max-height: calc(100dvh - 32px); overflow: hidden; border: 1px solid #d4ddd2; border-radius: 16px; background: #fffdf7; box-shadow: 0 20px 70px #0005; }
+.modal-header { display: flex; flex: 0 0 auto; justify-content: space-between; align-items: start; gap: 14px; padding: 17px 20px; border-bottom: 1px solid var(--line); }
+.modal-header h2 { margin: 4px 0; font-size: clamp(1.2rem, 3vw, 1.65rem); line-height: 1.2; }
+.eyebrow { margin: 0; color: var(--green); font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.modal-subtitle { margin: 5px 0 0; color: var(--muted); font-size: .9rem; }
+.close-button { flex: 0 0 auto; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: white; font-size: 1.6rem; cursor: pointer; }
+.modal-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 20px; }
+.place-image { display: block; width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; background: #e6e8dc; }
+.technical-sheet { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 15px 0; }
+.technical-sheet div { padding: 11px; border: 1px solid var(--line); border-radius: 9px; background: #f7f7ef; }
+.technical-sheet dt { color: var(--muted); font-size: .78rem; font-weight: 700; }
+.technical-sheet dd { margin: 3px 0 0; font-weight: 650; }
+.description h3 { margin-bottom: 6px; }
+.description p { margin-top: 6px; }
+.modal-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.button { min-height: 44px; padding: 10px 16px; border: 1px solid transparent; border-radius: 9px; font-weight: 750; cursor: pointer; }
+.button-primary { color: white; background: var(--green); }
+.button-primary:hover { background: var(--green-dark); }
+.button-secondary { color: var(--green-dark); border-color: var(--line); background: white; }
+.game-heading { display: flex; align-items: start; justify-content: space-between; gap: 14px; margin-bottom: 15px; }
+.game-heading h3 { margin: 0; font-size: 1.3rem; }
+.game-heading p { margin: 4px 0 0; color: var(--muted); }
+.game-counter { padding: 5px 10px; border-radius: 999px; background: #edf2e9; font-size: .85rem; font-weight: 750; white-space: nowrap; }
+.game-mount { min-height: 160px; }
+.game-frame { display: block; width: 100%; height: 760px; border: 0; border-radius: 10px; background: #f5f3ed; }
+.game-placeholder { padding: 20px; border: 2px dashed #b9c9b8; border-radius: 12px; background: #f8f8f1; }
+.game-placeholder h4 { margin: 0 0 8px; }
+.game-placeholder p { margin: 6px 0; }
+.game-placeholder code { overflow-wrap: anywhere; }
+
+/* Color del texto de la ficha */
+#place-modal,
+#place-modal .modal-content,
+#place-modal #modal-summary,
+#place-modal p,
+#place-modal li {
+  color: #432918;
+}
+
+/* Títulos de la ficha */
+#place-modal h1,
+#place-modal h2,
+#place-modal h3 {
+  color: #06402B;
+}
+
+/* Enlaces */
+#place-modal a {
+  color: #7DD3FC;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .technical-sheet { grid-template-columns: 1fr; }
+  .modal-backdrop { padding: 8px; }
+  .modal { max-height: calc(100dvh - 16px); }
+  .modal-header, .modal-content { padding: 14px; }
+  .map-labels { font-size: 17px; }
+  .game-frame { height: 900px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+/* ESTILOS DE LOS MINIJUEGOS
+   Cada minijuego se ejecuta en un iframe aislado. Sus estilos propios están
+   en el campo css del objeto gameN correspondiente en script.js. */
