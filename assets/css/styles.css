@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://raw.githubusercontent.com/raulgo04/ObraMAE24/refs/heads/main/assets/img/common/index.jpg'); 
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.transparent-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.transparent-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
