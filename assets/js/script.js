@@ -1,8 +1,19 @@
 
 const photos = [
-  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85",
-  "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=85",
-  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=85"
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/puentevizcaya.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/SanMillanYusoSuso.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/Alhambra.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/Aranjuez.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/TerritorioMudejar.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/Sintra.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/PalmeralElche.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/MenorcaTalayotica.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/DolmenesAntequera.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/Ibiza.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/RiscoCaidoGranCanaria.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/SerraTramuntana.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/TorreHercules.jpg",
+  "https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/ValldeMadriuPerafitaClaror.jpg",
 ];
 
 const layers = [
