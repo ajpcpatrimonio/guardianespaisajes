@@ -6,7 +6,7 @@ Esta videojuego se compone de un mapa interactivo de la Península Ibérica que 
 
 Los grupos de estudiantes durante el proceso extrajeron información sobre los 14 sitios de la Alianza de Paisajes Culturales y Sitios Afines Patrimonio Mundial y programaron un minijuego asignado a cada paisaje cultural con ayuda de la Inteligencia Artificial (IA). Durante el evento, también adquirieron conocimientos sobre el patrimonio cultural y los paisajes culturales así como nuevas habilidades tecnológicas y análisis crítico de las mismas, aprendiendo sobre ética en la IA, uso de la misma, generación de prompts con fines creativos y elementos básicos de HTML, CSS y Javascript.
 
-La obra puede ser consultada en este enlace: https://ajpcpatrimonio.github.io/videojuegopaisajesculturales/assets/html/index.html
+La obra puede ser consultada en este enlace: https://ajpcpatrimonio.github.io/guardianespaisajes/assets/html/index.html
 
 (Imagen 1)
 
