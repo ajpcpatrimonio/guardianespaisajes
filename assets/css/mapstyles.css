@@ -36,6 +36,7 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid #125ec5; out
 .close-button { flex: 0 0 auto; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: white; font-size: 1.6rem; cursor: pointer; }
 .modal-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 20px; }
 .place-image { display: block; width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; background: #e6e8dc; }
+.img-caption { padding-top:10px; font-size:0.9rem; }
 .technical-sheet { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 15px 0; }
 .technical-sheet div { padding: 11px; border: 1px solid var(--line); border-radius: 9px; background: #f7f7ef; }
 .technical-sheet dt { color: var(--muted); font-size: .78rem; font-weight: 700; }
