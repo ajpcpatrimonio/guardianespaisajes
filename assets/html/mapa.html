@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href=".././css/mapstyles.css">
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/common/faviconwh.png">
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/common/faviconwh.png"
+  >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guardianes del Patrimonio</title>
 </head>
@@ -15,37 +20,86 @@
   </header>
 
   <main class="page">
-    <section aria-labelledby="map-heading">
+    <section aria-label="Mapa interactivo de los paisajes culturales">
       <div class="map-frame">
         <div class="map-canvas" id="map-canvas">
-          <img class="map-art" src="https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/mapdef.png" alt="Mapa de los Paisajes Culturales de la Península Ibérica" />
-          <div id="map-points" class="map-points" aria-label="Puntos interactivos del mapa"></div>
+          <img
+            class="map-art"
+            src="https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/mapdef.png"
+            alt="Mapa de los Paisajes Culturales de la Península Ibérica"
+          >
+          <div
+            id="map-points"
+            class="map-points"
+            aria-label="Puntos interactivos del mapa"
+          ></div>
         </div>
       </div>
     </section>
   </main>
 
   <div id="modal-backdrop" class="modal-backdrop" hidden>
-    <section class="modal" id="place-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-subtitle">
+    <section
+      class="modal"
+      id="place-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-subtitle"
+    >
       <header class="modal-header">
         <div>
           <h2 id="modal-title">Punto del mapa</h2>
           <p id="modal-subtitle" class="modal-subtitle"></p>
         </div>
-        <button id="modal-close" class="close-button" type="button" aria-label="Cerrar ventana">×</button>
+        <button
+          id="modal-close"
+          class="close-button"
+          type="button"
+          aria-label="Cerrar ventana"
+        >×</button>
       </header>
 
       <section id="place-view" class="modal-content">
-        <img id="place-image" class="place-image" src="https://www.alianzapaisajesculturales.org/wp-content/uploads/2018/05/Antonio-Castillo-L%C3%B3pez-3.jpg" alt="Paisaje cultural de Aranjuez">
-        <figcaption id="img-caption" class= "img-caption" >Imagen e ilustración del mapa: Palacio Real de Aranjuez (Comunidad de Madrid, España).</figcaption>
+        <img
+          id="place-image"
+          class="place-image"
+          src="https://www.alianzapaisajesculturales.org/wp-content/uploads/2018/05/Antonio-Castillo-L%C3%B3pez-3.jpg"
+          alt="Paisaje cultural de Aranjuez"
+        >
+
+        <figcaption id="img-caption" class="img-caption">
+          Imagen e ilustración del mapa: Palacio Real de Aranjuez
+          (Comunidad de Madrid, España).
+        </figcaption>
+
         <dl class="technical-sheet">
-          <div><dt>Reconocimiento</dt><dd id="sheet-recognition">Patrimonio Mundial</dd></div>
-          <div><dt>Inscripción</dt><dd id="sheet-year">UNESCO · 2001</dd></div>
-          <div><dt>Elementos clave</dt><dd id="sheet-values">Naturaleza, agua y arquitectura</dd></div>
+          <div>
+            <dt>Reconocimiento</dt>
+            <dd id="sheet-recognition">Patrimonio Mundial</dd>
+          </div>
+          <div>
+            <dt>Año de inscripción</dt>
+            <dd id="sheet-year">UNESCO · 2001</dd>
+          </div>
+          <div>
+            <dt>Localización geográfica</dt>
+            <dd id="sheet-location"></dd>
+          </div>
+          <div>
+            <dt>Elementos clave</dt>
+            <dd id="sheet-values">Naturaleza, agua y arquitectura</dd>
+          </div>
         </dl>
+
         <div id="place-description" class="description"></div>
+
         <div class="modal-actions">
-          <button id="play-game" type="button" class="button button-primary">Iniciar juego</button>
+          <button
+            id="play-game"
+            type="button"
+            class="button button-primary"
+          >Iniciar juego</button>
         </div>
       </section>
 
@@ -57,33 +111,45 @@
           </div>
           <span id="game-counter" class="game-counter">Reto</span>
         </div>
+
         <div id="game-mount" class="game-mount"></div>
+
         <div class="modal-actions">
-          <button id="back-to-place" type="button" class="button button-secondary">Volver a la ficha</button>
+          <button
+            id="back-to-place"
+            type="button"
+            class="button button-secondary"
+          >Volver a la ficha</button>
         </div>
       </section>
     </section>
   </div>
+
   <script src=".././js/mapscript.js"></script>
+
   <footer class="site-footer" aria-label="Créditos del proyecto">
-  <div class="footer-content">
-    <h2>Créditos</h2>
+    <div class="footer-content">
+      <h2>Créditos</h2>
 
-    <p>
-      Todos los derechos reservados a Irene Martín Laguna por la ilustración. <br>
-      A la Alianza de Paisajes Culturales y Sitios Afines Patrimonio Mundial y sus socios por las fotografías.<br>
-      A los alumnos de 4.º de ESO del IES Santiago Rusiñol de Aranjuez por el desarrollo de los minijuegos.<br>
-      A la Asociación de Jóvenes Profesionales por el Patrimonio Cultural (AJPC) por el desarrollo de la web.
-    </p>
+      <p>
+        Todos los derechos reservados a Irene Martín Laguna por la ilustración.<br>
+        A la Alianza de Paisajes Culturales y Sitios Afines Patrimonio Mundial
+        y sus socios por las fotografías.<br>
+        A los alumnos de 4.º de ESO del IES Santiago Rusiñol de Aranjuez
+        por el desarrollo de los minijuegos.<br>
+        A la Asociación de Jóvenes Profesionales por el Patrimonio Cultural
+        (AJPC) por el desarrollo de la web.
+      </p>
 
-    <img
-      class="footer-image"
-      src="https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/footerlogo.png"
-      alt="Imagen de créditos y entidades colaboradoras del proyecto"
-      loading="lazy"
-    />
-  </div>
-</footer>
+      <img
+        class="footer-image"
+        src="https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/footerlogo.png"
+        alt="Imagen de créditos y entidades colaboradoras del proyecto"
+        loading="lazy"
+      >
+    </div>
+  </footer>
 </body>
 </html>
+
   
