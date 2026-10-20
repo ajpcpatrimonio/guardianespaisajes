@@ -10,7 +10,7 @@ La obra puede ser consultada en este enlace: https://ajpcpatrimonio.github.io/gu
 
 ![Guardianes de los Paisajes](https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/common/indexfoto.JPG)
 
-(Imagen 2)
+![Guardianes de los Paisajes](https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/pantallamap.JPG)
 
 ## Listado de Paisajes Culturales 
 1. Aranjuez (Paisaje Cultural de Aranjuez, España)
@@ -49,4 +49,4 @@ A todos los alumnos participantes de 4o ESO del IES Santiago Rusiñol de Aranjue
  Alianza de Paisajes Culturales y Sitios Afines Patrimonio Mundial, a la Fundación Aranjuez Paisaje Cultural y a la Concejalía de Educación del Ayuntamiento del Real Sitio y Villa de Aranjuez 
 A Amazon Future Engineers por la financiación para la obra dentro del programa Meet and Code 2026 y de la Code Week de la Unión Europea a través de la Asociación de Jóvenes Profesionales por el Patrimonio Cultural (AJPC)
 
-(imagen con logos)
+![Guardianes de los Paisajes][https://raw.githubusercontent.com/ajpcpatrimonio/guardianespaisajes/refs/heads/main/assets/img/footerlogo.png]
